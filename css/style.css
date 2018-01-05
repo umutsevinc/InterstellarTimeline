@@ -1,0 +1,117 @@
+@keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#cf3 img.top {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+body {
+  margin: 0;
+  background-color: black;
+}
+.cover {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 7%;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.promptDiv {
+  top: 10%;
+  left: 60%;
+  position: absolute;
+}
+.prompt {
+  position: absolute;
+  color: #fff;
+  font-family: "HCo Verlag", CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT,
+    sans-serif;
+  background-color: transparent;
+}
+.type-wrap {
+  margin: 10px auto;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  border: #ccc 1px solid;
+}
+.ngm-intro-content {
+  width: 90%;
+  margin: 0;
+  max-width: 12000px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: right;
+}
+.ngm-intro-content2 {
+  width: 90%;
+  margin: 0;
+  max-width: 12000px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: right;
+}
+.ngm-dek {
+  position: absolute;
+  text-align: right;
+  width: 100%;
+}
+.ngm-head {
+  font-size: 55px;
+  text-align: center;
+}
+.ngm-big {
+  text-align: center;
+}
+.ngm-byline {
+  font-family: "HCo Verlag", CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT,
+    sans-serif;
+}
+.mt3_heading--h1--2 {
+  font-family: "HCo Verlag", CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT,
+    sans-serif;
+  letter-spacing: 0.8em;
+  text-transform: uppercase;
+  word-spacing: 0.1em;
+  font-size: 50px;
+  text-align: center;
+}
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#info {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  display: block;
+  color: azure;
+}

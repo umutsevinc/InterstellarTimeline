@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+.cover {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 7%;
+}
+#lens {
+  background-color: black;
+  width: 500px;
+  height: 100px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.prompt {
+  color: #fff;
+  font-family: "HCo Verlag", CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT,
+    sans-serif;
+  background-color: transparent;
+}
+.type-wrap {
+  margin: 10px auto;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  border: #ccc 1px solid;
+}
+.ngm-intro-content {
+  width: 90%;
+  margin: 0;
+  max-width: 12000px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: right;
+}
+.ngm-dek {
+  margin-top: 10%;
+}
+.ngm-head {
+  font-size: 55px;
+  text-align: center;
+}
+.ngm-big {
+  text-align: center;
+}
+.ngm-byline {
+  font-family: "HCo Verlag", CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT,
+    sans-serif;
+}
+.mt3_heading--h1--2 {
+  font-family: "HCo Verlag", CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT,
+    sans-serif;
+  letter-spacing: 0.8em;
+  text-transform: uppercase;
+  word-spacing: 0.1em;
+  font-size: 50px;
+  text-align: center;
+}
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#info {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  display: block;
+  color: azure;
+}
