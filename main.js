@@ -8,8 +8,8 @@ var clock = new THREE.Clock();
 var currentStep = 1;
 var canMove = true;
 
-$(document).ready(function() {
-  setTimeout(function() {
+$(document).ready(function () {
+  setTimeout(function () {
     $("#intro, #intro2").fadeIn(4000);
     $("#intro, #intro2").fadeOut(4000);
     $("#intro3").fadeIn(4000);
@@ -38,7 +38,7 @@ function init() {
   var audioLoader = new THREE.AudioLoader();
   var listener = new THREE.AudioListener();
   var audio = new THREE.Audio(listener);
-  audioLoader.load("./assets/INTERSTELLAR.mp3", function(buffer) {
+  audioLoader.load("./assets/INTERSTELLAR.mp3", function (buffer) {
     audio.setBuffer(buffer);
     audio.setLoop(true);
     audio.play();
@@ -48,8 +48,13 @@ function init() {
   earth = createEarth(0.5, 32);
   scene.add(earth);
 
+  //EARTHCLOUD
   cloud = createCloud(0.503, 32);
   earth.add(cloud);
+
+  //EDMONDPLANETS
+  edmonds = createEdmonds(0.5, 32);
+  scene.add(edmonds);
 
   //COOPERSTATION;
   var cooperStation = new THREE.CylinderGeometry(10, 10, 130, 32, 1, true);
@@ -66,7 +71,7 @@ function init() {
     cooperStation,
     materials
   );
-  cooperStation2.position.x = -0.7;
+  cooperStation2.position.x = -0.3;
   cooperStation2.position.z = 500;
   cooperStation2.rotation.x = 4.8;
   cooperStation2.rotation.z = -0.05;
@@ -88,18 +93,12 @@ function init() {
     loop: true
   });
   var typed66 = new Typed("#CooperPrompt", {
-    strings: ["ljmhmoj ijùjjjùjj"],
+    strings: ["Station Cooper^10\nPrêt de Saturn"],
     typeSpeed: 50,
     backSpeed: 40,
     loop: true
   });
 
-  // var typed6 = new Typed("#CooperTyped", {
-  //   strings: ["Cooper Station^1000\n `Our Galaxy` ^1000\n `Near Saturn`"],
-  //   typeSpeed: 20,
-  //   backSpeed: 0,
-  //   loop: false
-  // });
 
   //LOADER FBX
   // mixers = [];
@@ -217,7 +216,7 @@ function animate() {
 var step = [
   { position: 20, name: "Edmunds" },
   { position: 1040, name: "Cooper" },
-  { position: 2040, name: "Cooper" }
+  { position: 3040, name: "Cooper" }
 ];
 
 function nextStep() {
